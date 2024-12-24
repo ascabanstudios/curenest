@@ -7,7 +7,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #eaf2f8; /* Soft light background */
+    background-color: #eaf7f2; /* Soft light background color */
     color: #2c3e50; /* Dark blue-grey text color for readability */
     line-height: 1.6;
     padding: 0;
@@ -19,14 +19,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #27ae60; /* Green background for navbar */
-    padding: 15px 30px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #27ae60; /* Green navbar background */
+    padding: 20px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Added shadow for depth */
 }
 
 .navbar .logo {
-    font-size: 1.8em;
-    font-weight: bold;
+    font-size: 2em;
+    font-weight: 600;
     color: white;
     letter-spacing: 1px;
 }
@@ -34,7 +34,7 @@ body {
 .navbar .nav-links {
     list-style: none;
     display: flex;
-    gap: 30px;
+    gap: 20px;
 }
 
 .navbar .nav-links li a {
@@ -45,21 +45,23 @@ body {
 }
 
 .navbar .nav-links li a:hover {
-    color: #f1c40f; /* Gold color for hover effect */
+    color: #f39c12; /* Hover color changed to gold */
 }
 
 /* Hero Section */
 .hero-section {
     text-align: center;
-    padding: 80px 20px;
+    padding: 100px 20px;
     background: linear-gradient(to bottom, #27ae60, #2980b9); /* Green to Blue gradient */
     color: white;
+    border-bottom: 5px solid #1f6391; /* Darker blue border for separation */
 }
 
 .hero-section h1 {
-    font-size: 3.5em;
+    font-size: 4em;
     margin-bottom: 20px;
-    font-weight: 600;
+    font-weight: 700;
+    text-transform: uppercase;
 }
 
 .hero-section p {
@@ -68,12 +70,12 @@ body {
 }
 
 .cta-button {
-    background-color: #f39c12; /* Gold color */
+    background-color: #f39c12; /* Bright yellow-orange */
     color: #2c3e50; /* Dark text for contrast */
     padding: 15px 30px;
-    font-size: 1.2em;
+    font-size: 1.4em;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 50px; /* Rounded button */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
@@ -83,52 +85,73 @@ body {
 }
 
 /* About Section */
-.about-section,
-.download-section,
-.privacy-policy-section {
+.about-section {
     padding: 60px 30px;
+    background-color: #ffffff; /* White background for sections */
     text-align: center;
-    background-color: #f9f9f9; /* Light background for sections */
 }
 
 h2 {
     font-size: 2.5em;
     color: #27ae60; /* Green for section titles */
     margin-bottom: 25px;
+    font-weight: 700;
 }
 
-p {
-    font-size: 1.2em;
-    line-height: 1.6;
-    color: #34495e; /* Darker text for paragraphs */
+.about-section p {
+    font-size: 1.3em;
+    color: #34495e;
 }
 
-/* Download Button */
+/* Download Section */
+.download-section {
+    padding: 60px 30px;
+    background-color: #ecf0f1; /* Light grey background */
+    text-align: center;
+}
+
 .download-button {
-    background-color: #2980b9; /* Blue background for download button */
+    background-color: #2980b9; /* Blue button for download */
     color: white;
     font-size: 1.3em;
     padding: 15px 30px;
     border: none;
-    border-radius: 5px;
+    border-radius: 50px;
     cursor: pointer;
     text-decoration: none;
     transition: background-color 0.3s ease;
 }
 
 .download-button:hover {
-    background-color: #1f6391; /* Darker blue when hovering */
+    background-color: #1f6391; /* Darker blue for hover */
+}
+
+/* Privacy Policy Section */
+.privacy-policy-section {
+    padding: 60px 30px;
+    background-color: #ffffff; /* White background for privacy section */
+    text-align: center;
+}
+
+.privacy-policy-section a {
+    text-decoration: none;
+    color: #27ae60; /* Green link color */
+    font-weight: bold;
+}
+
+.privacy-policy-section a:hover {
+    color: #2980b9; /* Blue color on hover */
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #2c3e50; /* Dark footer with contrast text */
+    background-color: #2c3e50; /* Dark footer */
     color: white;
     margin-top: 50px;
 }
 
 footer p {
-    font-size: 1em;
+    font-size: 1.1em;
 }
