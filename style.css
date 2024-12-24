@@ -1,4 +1,4 @@
-/* General reset */
+/* Reset and Basic Styling */
 * {
     margin: 0;
     padding: 0;
@@ -7,98 +7,147 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f4f4;
+    background-color: #e0f7fa;
     color: #333;
     line-height: 1.6;
+    padding: 0;
+    margin: 0;
 }
 
-/* Navigation bar */
+/* Navigation Bar */
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #007BFF;
-    padding: 10px 20px;
+    background-color: #00695c;
+    padding: 15px 20px;
     color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .navbar .logo {
-    font-size: 1.5em;
+    font-size: 1.8em;
     font-weight: bold;
+    letter-spacing: 1px;
 }
 
 .navbar .nav-links {
     list-style: none;
     display: flex;
-    gap: 15px;
+    gap: 20px;
 }
 
 .navbar .nav-links li a {
     text-decoration: none;
     color: white;
-    font-size: 1em;
+    font-size: 1.1em;
     transition: color 0.3s ease;
 }
 
 .navbar .nav-links li a:hover {
-    color: #FFD700;
+    color: #ffd54f;
 }
 
-/* Hero section */
+/* Hero Section */
 .hero-section {
     text-align: center;
-    padding: 50px;
-    background: linear-gradient(to bottom, #007BFF, #0056b3);
+    padding: 60px 20px;
+    background: linear-gradient(to right, #009688, #004d40);
     color: white;
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
 }
 
 .hero-section h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 .hero-section p {
-    font-size: 1.2em;
+    font-size: 1.4em;
+    margin-bottom: 30px;
+    font-weight: 300;
 }
 
-/* About section */
+.cta-button {
+    background-color: #ffd54f;
+    color: #004d40;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #ffb300;
+    transform: scale(1.1);
+}
+
+/* About Section */
 .about-section,
 .download-section,
 .privacy-policy-section {
-    padding: 40px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
 h2 {
     font-size: 2.5em;
-    color: #007BFF;
+    color: #00796b;
     margin-bottom: 20px;
+    text-transform: uppercase;
 }
 
 p {
     font-size: 1.2em;
+    font-weight: 300;
+    color: #555;
 }
 
-/* Download button */
-button {
-    background-color: #007BFF;
+/* Download Button */
+.download-button {
+    background-color: #00796b;
     color: white;
     font-size: 1.2em;
-    padding: 10px 20px;
+    padding: 15px 30px;
     border: none;
     border-radius: 5px;
+    text-decoration: none;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-button:hover {
-    background-color: #0056b3;
+.download-button:hover {
+    background-color: #004d40;
 }
 
 /* Footer */
 footer {
     text-align: center;
-    padding: 10px;
-    background-color: #007BFF;
+    padding: 20px;
+    background-color: #00695c;
     color: white;
+    font-size: 1em;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbar .logo {
+        font-size: 1.5em;
+    }
+
+    .navbar .nav-links {
+        flex-direction: column;
+    }
+
+    .hero-section h1 {
+        font-size: 2.5em;
+    }
+
+    .cta-button {
+        font-size: 1.1em;
+    }
 }
