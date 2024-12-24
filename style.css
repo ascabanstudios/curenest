@@ -1,4 +1,4 @@
-/* Reset and Basic Styling */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -7,63 +7,58 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #f4f7fa;
+    background-color: #f4f4f4;
     color: #333;
     line-height: 1.6;
 }
 
-header.navbar {
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: #00796b;
+    padding: 10px 20px;
     color: white;
-    padding: 15px 20px;
-    text-align: center;
 }
 
-header .logo {
-    font-size: 2em;
+.navbar .logo {
+    font-size: 1.5em;
     font-weight: bold;
 }
 
-header nav ul {
+.navbar .nav-links {
     list-style: none;
     display: flex;
-    justify-content: center;
-    gap: 20px;
+    gap: 15px;
 }
 
-header nav ul li a {
+.navbar .nav-links li a {
     text-decoration: none;
     color: white;
-    font-size: 1.1em;
+    font-size: 1em;
     transition: color 0.3s ease;
 }
 
-header nav ul li a:hover {
-    color: #ffd54f;
+.navbar .nav-links li a:hover {
+    color: #FFD700;
 }
 
 /* Hero Section */
-#hero {
-    background-color: #00796b;
-    color: white;
-    padding: 40px 20px;
+.hero-section {
     text-align: center;
+    padding: 50px;
+    background: linear-gradient(to bottom, #00796b, #004d40);
+    color: white;
 }
 
-.cta-button {
-    display: inline-block;
-    background-color: #ffd54f;
-    padding: 12px 30px;
-    color: #00796b;
-    text-decoration: none;
+.hero-section h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
     font-size: 1.2em;
-    margin-top: 20px;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #ffca28;
 }
 
 /* About Section */
@@ -73,14 +68,13 @@ header nav ul li a:hover {
 }
 
 .about-section h2 {
+    font-size: 2.5em;
     color: #00796b;
-    font-size: 2em;
     margin-bottom: 20px;
 }
 
 .about-section p {
-    font-size: 1.1em;
-    color: #555;
+    font-size: 1.2em;
 }
 
 /* Download Section */
@@ -110,6 +104,7 @@ header nav ul li a:hover {
     border-radius: 5px;
     transition: background-color 0.3s ease;
     display: inline-block;
+    margin-top: 30px; /* Moves the button down */
 }
 
 .download-button:hover {
@@ -123,54 +118,18 @@ header nav ul li a:hover {
 }
 
 .privacy-policy-section h2 {
+    font-size: 2.5em;
     color: #00796b;
-    font-size: 2em;
     margin-bottom: 20px;
 }
 
 .privacy-policy-section p {
     font-size: 1.2em;
-    margin-bottom: 20px;
 }
 
-.privacy-policy-section a {
-    color: #00796b;
-    font-size: 1.1em;
-    text-decoration: none;
-}
-
-.privacy-policy-section a:hover {
-    color: #ffd54f;
-}
-
-/* Footer */
 footer {
+    text-align: center;
+    padding: 10px;
     background-color: #00796b;
     color: white;
-    text-align: center;
-    padding: 20px;
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    header .logo {
-        font-size: 1.5em;
-    }
-
-    header nav ul {
-        flex-direction: column;
-    }
-
-    .cta-button, .download-button {
-        padding: 12px 30px;
-        font-size: 1em;
-    }
-
-    .about-section h2, .download-section h2 {
-        font-size: 1.8em;
-    }
-
-    .about-section p, .download-section p {
-        font-size: 1.1em;
-    }
 }
