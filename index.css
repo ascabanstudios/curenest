@@ -1,0 +1,75 @@
+/* General reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+main {
+    padding: 20px;
+}
+
+h2 {
+    font-size: 2em;
+    color: #007BFF;
+    margin-top: 20px;
+}
+
+.description p, .download p {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #007BFF;
+    color: white;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
