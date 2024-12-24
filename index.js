@@ -1,2 +1,4 @@
-// JavaScript for handling the download button
-// You can modify the link or add more interactivity here in the future
+// Optional: Additional interactivity can be added later
+document.addEventListener("DOMContentLoaded", function () {
+    console.log("CureNest Healthcare App is ready!");
+});
