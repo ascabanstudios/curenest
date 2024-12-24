@@ -80,19 +80,19 @@ body {
 /* Download Section */
 .download-section {
     background-color: #ffffff;
-    padding: 40px 20px;
+    padding: 50px 20px; /* Added padding to create space around the content */
     text-align: center;
 }
 
 .download-section h2 {
     color: #00796b;
-    font-size: 2em;
-    margin-bottom: 20px;
+    font-size: 2.5em;
+    margin-bottom: 20px; /* Space below the heading */
 }
 
 .download-section p {
     font-size: 1.2em;
-    margin-bottom: 30px;
+    margin-bottom: 30px; /* Space below the paragraph */
 }
 
 .download-button {
@@ -104,12 +104,13 @@ body {
     border-radius: 5px;
     transition: background-color 0.3s ease;
     display: inline-block;
-    margin-top: 30px; /* Moves the button down */
+    margin-top: 30px; /* Moves the button down and provides space above */
 }
 
 .download-button:hover {
     background-color: #004d40;
 }
+
 
 /* Privacy Policy Section */
 .privacy-policy-section {
