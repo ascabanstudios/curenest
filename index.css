@@ -7,8 +7,8 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: #f8f9fa;
-    color: #343a40;
+    background-color: #eaf2f8; /* Soft light background */
+    color: #2c3e50; /* Dark blue-grey text color for readability */
     line-height: 1.6;
     padding: 0;
     margin: 0;
@@ -19,7 +19,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #007bff;
+    background-color: #27ae60; /* Green background for navbar */
     padding: 15px 30px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
@@ -45,14 +45,14 @@ body {
 }
 
 .navbar .nav-links li a:hover {
-    color: #f1c40f;
+    color: #f1c40f; /* Gold color for hover effect */
 }
 
 /* Hero Section */
 .hero-section {
     text-align: center;
     padding: 80px 20px;
-    background: linear-gradient(to bottom, #007bff, #0056b3);
+    background: linear-gradient(to bottom, #27ae60, #2980b9); /* Green to Blue gradient */
     color: white;
 }
 
@@ -68,8 +68,8 @@ body {
 }
 
 .cta-button {
-    background-color: #f1c40f;
-    color: #007bff;
+    background-color: #f39c12; /* Gold color */
+    color: #2c3e50; /* Dark text for contrast */
     padding: 15px 30px;
     font-size: 1.2em;
     text-decoration: none;
@@ -78,7 +78,7 @@ body {
 }
 
 .cta-button:hover {
-    background-color: #f39c12;
+    background-color: #f1c40f;
     color: white;
 }
 
@@ -88,22 +88,24 @@ body {
 .privacy-policy-section {
     padding: 60px 30px;
     text-align: center;
+    background-color: #f9f9f9; /* Light background for sections */
 }
 
 h2 {
     font-size: 2.5em;
-    color: #007bff;
+    color: #27ae60; /* Green for section titles */
     margin-bottom: 25px;
 }
 
 p {
     font-size: 1.2em;
     line-height: 1.6;
+    color: #34495e; /* Darker text for paragraphs */
 }
 
 /* Download Button */
 .download-button {
-    background-color: #007bff;
+    background-color: #2980b9; /* Blue background for download button */
     color: white;
     font-size: 1.3em;
     padding: 15px 30px;
@@ -115,14 +117,14 @@ p {
 }
 
 .download-button:hover {
-    background-color: #0056b3;
+    background-color: #1f6391; /* Darker blue when hovering */
 }
 
 /* Footer */
 footer {
     text-align: center;
     padding: 20px;
-    background-color: #343a40;
+    background-color: #2c3e50; /* Dark footer with contrast text */
     color: white;
     margin-top: 50px;
 }
