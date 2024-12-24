@@ -7,147 +7,170 @@
 
 body {
     font-family: 'Arial', sans-serif;
-    background-color: #e0f7fa;
+    background-color: #f4f7fa;
     color: #333;
     line-height: 1.6;
-    padding: 0;
-    margin: 0;
 }
 
-/* Navigation Bar */
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #00695c;
-    padding: 15px 20px;
+header.navbar {
+    background-color: #00796b;
     color: white;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px 20px;
+    text-align: center;
 }
 
-.navbar .logo {
-    font-size: 1.8em;
+header .logo {
+    font-size: 2em;
     font-weight: bold;
-    letter-spacing: 1px;
 }
 
-.navbar .nav-links {
+header nav ul {
     list-style: none;
     display: flex;
+    justify-content: center;
     gap: 20px;
 }
 
-.navbar .nav-links li a {
+header nav ul li a {
     text-decoration: none;
     color: white;
     font-size: 1.1em;
     transition: color 0.3s ease;
 }
 
-.navbar .nav-links li a:hover {
+header nav ul li a:hover {
     color: #ffd54f;
 }
 
 /* Hero Section */
-.hero-section {
-    text-align: center;
-    padding: 60px 20px;
-    background: linear-gradient(to right, #009688, #004d40);
+#hero {
+    background-color: #00796b;
     color: white;
-    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
-}
-
-.hero-section h1 {
-    font-size: 3.5em;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-}
-
-.hero-section p {
-    font-size: 1.4em;
-    margin-bottom: 30px;
-    font-weight: 300;
+    padding: 40px 20px;
+    text-align: center;
 }
 
 .cta-button {
+    display: inline-block;
     background-color: #ffd54f;
-    color: #004d40;
-    font-size: 1.2em;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
+    padding: 12px 30px;
+    color: #00796b;
     text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.2s ease;
+    font-size: 1.2em;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
 .cta-button:hover {
-    background-color: #ffb300;
-    transform: scale(1.1);
+    background-color: #ffca28;
 }
 
 /* About Section */
-.about-section,
-.download-section,
-.privacy-policy-section {
-    padding: 60px 20px;
+.about-section {
+    padding: 40px 20px;
     text-align: center;
 }
 
-h2 {
-    font-size: 2.5em;
+.about-section h2 {
     color: #00796b;
+    font-size: 2em;
     margin-bottom: 20px;
-    text-transform: uppercase;
 }
 
-p {
-    font-size: 1.2em;
-    font-weight: 300;
+.about-section p {
+    font-size: 1.1em;
     color: #555;
 }
 
-/* Download Button */
+/* Download Section */
+.download-section {
+    background-color: #ffffff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.download-section h2 {
+    color: #00796b;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.download-section p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
 .download-button {
     background-color: #00796b;
     color: white;
-    font-size: 1.2em;
-    padding: 15px 30px;
-    border: none;
-    border-radius: 5px;
     text-decoration: none;
-    cursor: pointer;
+    font-size: 1.2em;
+    padding: 15px 40px;
+    border-radius: 5px;
     transition: background-color 0.3s ease;
+    display: inline-block;
 }
 
 .download-button:hover {
     background-color: #004d40;
 }
 
+/* Privacy Policy Section */
+.privacy-policy-section {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.privacy-policy-section h2 {
+    color: #00796b;
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.privacy-policy-section p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.privacy-policy-section a {
+    color: #00796b;
+    font-size: 1.1em;
+    text-decoration: none;
+}
+
+.privacy-policy-section a:hover {
+    color: #ffd54f;
+}
+
 /* Footer */
 footer {
+    background-color: #00796b;
+    color: white;
     text-align: center;
     padding: 20px;
-    background-color: #00695c;
-    color: white;
-    font-size: 1em;
 }
 
 /* Media Queries for Responsiveness */
 @media (max-width: 768px) {
-    .navbar .logo {
+    header .logo {
         font-size: 1.5em;
     }
 
-    .navbar .nav-links {
+    header nav ul {
         flex-direction: column;
     }
 
-    .hero-section h1 {
-        font-size: 2.5em;
+    .cta-button, .download-button {
+        padding: 12px 30px;
+        font-size: 1em;
     }
 
-    .cta-button {
+    .about-section h2, .download-section h2 {
+        font-size: 1.8em;
+    }
+
+    .about-section p, .download-section p {
         font-size: 1.1em;
     }
 }
