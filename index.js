@@ -1,4 +1,1 @@
-// Optional: Additional interactivity can be added later
-document.addEventListener("DOMContentLoaded", function () {
-    console.log("CureNest Healthcare App is ready!");
-});
+// Currently empty; you can add interactivity in the future as needed.
