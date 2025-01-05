@@ -122,6 +122,7 @@ body {
 .flowchart-section {
     text-align: center;
     padding: 40px 20px;
+    display: block; /* Ensure the section is displayed */
 }
 
 .flowchart-section h2 {
@@ -130,10 +131,23 @@ body {
     margin-bottom: 20px;
 }
 
-.download-image {
-    max-width: 600px;
+.flowchart-image {
+    max-width: 100%;
     height: auto;
     object-fit: contain;
+    max-width: 600px; /* Limiting max width to maintain responsiveness */
+    visibility: visible; /* Ensures visibility of the image */
+    display: inline-block; /* Ensures image is inline and visible */
+    opacity: 1; /* Ensures no opacity is set (fully visible) */
+}
+
+/* Optional: Hide image on smaller screens */
+@media (max-width: 768px) {
+    .flowchart-image {
+        display: block;
+        margin: 0 auto; /* Center the image on small screens */
+        max-width: 90%; /* Allow more flexibility on smaller screens */
+    }
 }
 
 /* Privacy Policy Section */
