@@ -95,6 +95,20 @@ body {
     margin-bottom: 30px; /* Space below the paragraph */
 }
 
+.download-row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.download-image {
+    max-width: 300px;
+    max-height: 300px;
+    object-fit: contain;
+}
+
 .download-button {
     background-color: #00796b;
     color: white;
@@ -134,6 +148,7 @@ body {
     font-size: 1.2em;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 10px;
