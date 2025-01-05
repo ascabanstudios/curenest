@@ -95,20 +95,6 @@ body {
     margin-bottom: 30px; /* Space below the paragraph */
 }
 
-.download-row {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 30px; /* Increased the gap for better spacing */
-    flex-wrap: wrap;
-}
-
-.download-image {
-    max-width: 400px; /* Adjusted max width for better visibility */
-    max-height: 300px; /* Adjusted height for proportionate display */
-    object-fit: contain;
-}
-
 .download-button {
     background-color: #00796b;
     color: white;
@@ -130,6 +116,24 @@ body {
     font-size: 0.9rem;
     color: #555;
     margin-top: 10px;
+}
+
+/* Flowchart Section */
+.flowchart-section {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.flowchart-section h2 {
+    font-size: 2.5em;
+    color: #00796b;
+    margin-bottom: 20px;
+}
+
+.download-image {
+    max-width: 600px;
+    height: auto;
+    object-fit: contain;
 }
 
 /* Privacy Policy Section */
